@@ -10,10 +10,11 @@ const emojis = [
 
 function App() {
     const greeting = "greeting";
+    const displayAction = true;
     return (
         <div className="container">
             <h1 id={greeting}>Hello, World</h1>
-            <p>I am writting JSX</p>
+            {displayAction && <p>I am writting JSX</p>}
             <ul>
                 {emojis.map((emoji) => (
                     <li key={emoji.name}>
